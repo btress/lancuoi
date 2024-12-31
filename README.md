@@ -99,9 +99,9 @@
     const colors = ['#ff6347', '#87cefa', '#32cd32', '#ff69b4', '#ffa500', '#1e90ff'];
 
     function createMultipleRockets() {
-      for (let i = 0; i < 100; i++) { // Tạo 5 pháo hoa cùng lúc
+      for (let i = 0; i < 5; i++) { // Tạo 5 pháo hoa cùng lúc
         const x = Math.random() * canvas.width;
-        const y = canvas.height;
+        const y = canvas.height - 30; // Đảm bảo pháo hoa không ra ngoài màn hình
         const color = colors[Math.floor(Math.random() * colors.length)];
         rockets.push(new Rocket(x, y, color));
       }
