@@ -110,7 +110,7 @@
     function drawText() {
       ctx.globalAlpha = 1;
       ctx.fillStyle = 'white';
-      ctx.font = 'bold 60px Arial';
+      ctx.font = 'bold 30px Arial';
       ctx.textAlign = 'center';
       ctx.fillText('HAPPY NEW YEAR', canvas.width / 2, canvas.height / 2);
     }
